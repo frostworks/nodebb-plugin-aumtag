@@ -1,0 +1,44 @@
+# .llm/gemini.toml
+# Schema for crediting and documenting AI-assisted contributions in a project.
+# Version: 1.0.0
+
+[metadata]
+# The name of the project or plugin.
+project_name = "nodebb-plugin-aumtag"
+
+# A brief, one-sentence description of the task accomplished.
+summary = "Counts hashtag mentions within posts and aggregates them at the topic level. Duhsigned for canonical vs community nbb object tagging"
+
+# The ISO 8601 timestamp of the primary interaction.
+timestamp = "2025-06-21T19:38:17Z"
+
+[collaboration]
+# An array of contributors to this specific feature/task.
+contributors = [
+  { name = "psychobunny", type = "human", role = "duhsigner" },
+  { name = "Gemini", type = "ai_language_model", role = "code_generation_and_logic_design" }
+]
+
+[context]
+# A permanent link to the specific conversation that generated the contribution.
+# This provides full context, history, and verification.
+interaction_url = "https://g.co/gemini/share/1769f6e82bc8"
+
+# The primary repository where this code is implemented.
+repository_url = "https://github.com/frostworks/nodebb-plugin-aumtag"
+
+[implementation]
+# The primary programming languages used in the contribution.
+languages = ["JavaScript (Node.js)", "JSON"]
+
+# Frameworks, libraries, or platforms central to the solution.
+platforms = ["NodeBB"]
+
+# Key technical concepts or features provided by the assistant.
+# This helps document the nature of the AI's contribution.
+key_features = [
+  "Scalable logic using incremental updates (deltas) instead of full rescans.",
+  "Usage of NodeBB hooks: `action:post.save`, `action:post.delete`, `action:post.restore`.",
+  "Data modeling for storing counts as a JSON string in a topic field.",
+  "Boilerplate structure for the NodeBB plugin (`plugin.json`, `library.js`)."
+]

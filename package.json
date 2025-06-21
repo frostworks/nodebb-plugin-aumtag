@@ -22,6 +22,7 @@
   "bugs": {
     "url": "https://github.com/frostworks/nodebb-plugin-aumtag/issues"
   },
+  "readmeFilename": ".llm/README.md",
   "nbbpm": {
     "compatibility": "^4.0.0"
   }

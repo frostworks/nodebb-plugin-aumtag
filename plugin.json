@@ -1,0 +1,15 @@
+{
+	"id": "nodebb-plugin-aumtag",
+	"name": "aumtag",
+	"description": "[ALPHA] Counts hashtag mentions within posts and aggregates them at the topic level. Duhsigned for canonical vs community nbb object tagging. Implemented by Gemini.",
+	"version": "0.1.0",
+	"library": "./library.js",
+	"hooks": [
+		{ "hook": "action:post.save", "method": "handlePostSave" },
+		{ "hook": "action:post.delete", "method": "handlePostDelete" },
+		{ "hook": "action:post.restore", "method": "handlePostRestore" }
+	],
+	"staticDirs": {},
+	"less": [],
+	"scripts": []
+}

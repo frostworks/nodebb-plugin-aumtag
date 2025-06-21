@@ -1,0 +1,28 @@
+{
+  "name": "nodebb-plugin-aumtag",
+  "version": "0.1.0",
+  "description": "[ALPHA] Counts hashtag mentions within posts and aggregates them at the topic level. Duhsigned for canonical vs community nbb object tagging. Implemented by Gemini.",
+  "main": "library.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/frostworks/nodebb-plugin-aumtag"
+  },
+  "keywords": [
+    "umber",
+    "frostworks",
+    "hashtag",
+    "aumtag",
+    "nodebb"
+  ],
+  "author": {
+    "name": "psychobunny&gemini",
+    "email": "psycho.bunny@hotmail.com"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/frostworks/nodebb-plugin-aumtag/issues"
+  },
+  "nbbpm": {
+    "compatibility": "^4.0.0"
+  }
+}
